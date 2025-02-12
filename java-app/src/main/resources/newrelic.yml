@@ -2,6 +2,3 @@ common: &default_settings
   license_key: << YOUR LICENCE KEY HERE >>
   app_name: Java TEST - IAST Enabled
   agent_enabled: true
-
-  
-  
