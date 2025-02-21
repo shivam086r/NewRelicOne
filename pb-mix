@@ -1,0 +1,127 @@
+######### Paybyte-Admin ############# 
+
+ "username": "santosh.choudhary@paybyte.company",
+         "password": "P!)2Os9ho_"
+
+######### New-relic-licence-key ###########
+
+73eaebee1ef7a043999daf462b67723bFFFFNRAL
+
+c73197a2ac85287d10b5d75f1f109f7dFFFFNRAL
+
+curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=<API-key> NEW_RELIC_ACCOUNT_ID=6437367 /usr/local/bin/newrelic install
+
+New-relic-account-ID = 6437367
+
+key-id = 5A7A75DE66D64B41282058204EDE07A17172AF4AD27EEAE47702FEADB2C555A1
+
+API-key = 
+
+
+
+######### jenkins-cred ###############
+
+jenkins-paybyte
+J3nk1n5@pb!?-@dm1n
+
+
+############## terraform command ###############
+
+terraform init
+
+terraform fmt
+
+terraform validate
+
+terraform plan -out=tfplan.out
+
+terraform apply tfplan.out
+
+terraform plan -destroy -out=tfplandestroy.out
+
+terraform apply tfplandestroy.out
+
+##############################
+
+
+
+############# GPG encryption #############
+
+gpg --output Payment-InputFile.csv.gpg --recipient paybyteuser --encrypt payment_InputFile.csv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ssh -i SES-Java.pem ubuntu@3.29.237.90
+
+sudo apt install maven
+
+sudo apt install openjdk-8-jdk
+
+java -version
+
+sudo apt install maven
+
+sudo apt install git
+
+git clone https://github.com/shivam086r/ses-email-app.git
+
+cd ses-email-app
+
+mvn clean install
+
+java -jar target/ses-email-app-1.0-SNAPSHOT.jar
+
+/ses-email-app/src/main/java/com/example
+
+
+
+
+
+
+
+
+
+################ deployment #####################
+aws s3 cp s3://{{ aws_bucket_name }}/{{ service_name }}/paybyte-{{ service_name }}-{{ build_version }}.jar {{ artifact_directory_local }}/paybyte-{{ service_name }}-{{ build_version }}.jar --region {{ aws_region_name }} --no-progress
+
+"ls -rlt {{ artifact_directory_local }}/paybyte-{{ service_name }}-{{ build_version }}.jar"
+
+cd {{ app_log_home }}; nohup java {{ jvm_args }} -jar {{ artifact_directory_local }}/paybyte-{{ service_name }}-{{ build_version }}.jar > {{ out_file }} 2>&1 &"
+
+ps -ef|grep {{ service_name }}|grep -v grep|awk '{print $2}
+
+ nohup java -jar paybyte-utility-service-2025.02.19.jar &nohup java -Xms256m -Xmx512m -Dspring.profiles.active=qa \
+-jar /opt/deployment/paybyte-utility-service-2025.02.19.jar > output/utility-service.out 2>&1 &
+
+
+####################### Manual Deployment ##############################
+cd /var/log/apps/paybyte-utility-service-qa
+
+nohup java -Xms256m -Xmx512m -Dspring.profiles.active=qa \
+-jar /opt/deployment/paybyte-utility-service-2025.02.19.jar > output/utility-service.out 2>&1 &
+
+/opt/deployment/backup                                       paybyte-utility-service-2025.02.12.jar
+
+nohup java -Xms256m -Xmx512m -Dspring.profiles.active=qa \
+-jar /opt/deployment/backup/paybyte-utility-service-2025.02.12.jar > output/utility-service.out 2>&1 &
+
+ps -ef | grep paybyte-utility-service | grep -v grep
+
+
+
+
+
+
+
+
